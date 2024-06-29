@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design Example</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-tip">
+      <a href="#" class="latest">
+        Hello all ....This is my web development internship at cognifyz technology</a>
+    </div>
+    <main>
+      <section>
+        <h2>Responsive Design Example Website!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet
+          beatae illo fuga cupiditate suscipit, animi quasi
+        </p>
+        <button>Get started</button>
+      </section>
+      <section id="img-section">
+        <img
+          src=
+"../images/img.jpeg"
+          alt="Responsive Design Example"
+          loading="lazy"
+        />
+      </section>
+    </main>
+    <footer>
+      <div>&copy; Your Responsive Website</div>
+    </footer>
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", function () {
+          const menu = document.querySelector(".menu");
+          menu.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

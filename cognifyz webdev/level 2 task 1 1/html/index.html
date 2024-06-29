@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    .section{
+      background-color:white;
+    }
+    .container{
+      background-color:white;
+      display: flex;
+      padding: 30px;
+    }
+    .containerclass{
+      margin: 50px;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
+    .containerclass:hover{
+      background-color: white;
+      transform: scale(1.06);
+      background: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),rgb(63, 62, 62));
+      color: aliceblue;
+      transform: rotate(3deg);
+    }
+    .imaag{
+      border-radius: 10px;
+    }
+    h3{
+
+      color: black;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      line-height: 50px;
+      cursor:pointer;
+      
+    }
+    p{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 13px;
+    }
+    
+  </style>
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <div class="containerclass">
+      <img src="../images/th.jpeg" alt="art" class="imaag">
+      <h3 class="is-size-4 has-text-centered">Art</h3>
+      <p>Art is the activity by which a person, having experienced an emotion, intentionally transmits it to others” - Leo Tolstoy.</p>
+    </div>
+    <div class="containerclass">
+      <img src="../images/nature.jpeg" alt="nature" class="imaag">
+      <h3 class="is-size-4 has-text-centered">Nature</h3>
+      <p>Essentially, nature is everything we are surrounded by like the water we drink, the air we breathe, the sun we soak in, the birds we hear chirping, the moon we gaze at and more.</p>
+    </div>
+    <div class="containerclass">
+      <img src="../images/tiger.jpeg" alt="cub" class="imaag">
+      <h3 class="is-size-4 has-text-centered">Animal</h3>
+      <p>Cubs are the adorable young offspring of certain animals, known for their curiosity, playfulness, and distinctive appearance. .</p>
+    </div>
+  </div>
+  
+</section>
+
+</body>
+</html>

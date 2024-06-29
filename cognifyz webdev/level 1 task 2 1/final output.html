@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)file:///C:/Users/USER/OneDrive/Documents/me%20details/myprojects/cognifyz%20webdev/level%201%20task%202%202/html/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Alert Box</title>
+    <link rel="stylesheet" href="./final output_files/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            Welcome 
+        </h1>
+        <p>
+            This is a simple example of a custom alert 
+            box .
+        </p>
+        
+        <button class="custom-button">
+            Alert!!!!!!!!!!!!
+        </button>
+    </div>
+
+    <div id="customAlertBox" class="custom-alert" style="display: none;">
+        <div class="custom-alert-content">
+            <span class="close">×</span>
+            <p id="alertMessage">You clicked the button</p>
+        </div>
+    </div>
+
+    <script>
+        let alertBox =
+            document.getElementById("customAlertBox");
+        let alert_Message_container =
+            document.getElementById("alertMessage");
+        let custom_button =
+            document.querySelector(".custom-button");
+        let close_img =
+            document.querySelector(".close");
+        let body =
+            document.querySelector("body");
+
+        custom_button.addEventListener
+            ('click', function () {
+                alert_Message_container.innerHTML =
+                    "You clicked the button";
+                alertBox.style.display = "block";
+            });
+
+        close_img.addEventListener
+            ('click', function () {
+                alertBox.style.display = "none";
+            });
+
+    </script>
+
+
+
+</body></html>
